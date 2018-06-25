@@ -1,0 +1,36 @@
+<script>
+	//Pedra - Quebra a tesoura
+	//Tesoura - Corta o papel
+	//Papel - Envolve a pedra
+
+	while(true){
+		jogador1 = prompt("Jogador 1: Digita pedra, papel ou tesoura");
+		jogador2 = prompt("Jogador 2: Digita pedra, papel ou tesoura");
+
+		if(jogador1 == "pedra"){
+			if(jogador2 == "pedra"){
+				alert("Empate");
+			}else if(jogador2 == "tesoura"){
+				alert("Pedra quebra tesoura | Jogador 1 ganhou");
+			}else if(jogador2 == "papel"){
+				alert("Papel envolve a pedra | Jogador 2 ganhou ");
+			}
+		}else if(jogador1 == "papel"){
+			if(jogador2 == "pedra"){
+				alert("Papel envolve pedra | Jogador 1 ganhou");
+			}else if(jogador2 == "papel"){
+				alert("Empate");
+			}else if(jogador2 == "tesoura"){
+				alert("Tesoura corta papel | Jogador 2 ganhou");
+			}
+		}else if(jogador1 == "tesoura"){
+			if(jogador2 == "pedra"){
+				alert("Pedra quebra tesoura | Jogador 2 ganhou");
+			}else if(jogador2 == "papel"){
+				alert("Tesoura corta papel | Jogador 1 ganhou");
+			}else if(jogador2 == "tesoura"){
+				alert("Empate");
+			}
+		}
+	}
+</script>

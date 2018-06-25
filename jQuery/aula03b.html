@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="iso-8859-1">
+<title></title>
+<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".slidedown").click(function(){
+					$(".panel").slideToggle("slow");
+					$( "div" ).css( "width", "200px" ).add( "p" ).css( "background-color", "red" );
+					<ul id="menu">
+					<li>Primeiro</li>
+					<li>Segundo</li>
+					<li>Terceiro</li></ul>
+				});
+			});
+		</script>
+<style type="text/css">
+	div.panel,p.slidedown{margin:0; padding:5px; text-align:center; background:#e5eecc; border:solid 1px #c3c3c3;}
+	div.panel{height:120px; display:none;}
+</style>
+	</head>
+	<body>
+		<h2>Aula 3 - Efeito</h2>
+		<div class="panel">
+			<p>Este é apenas um parágrafo de teste</p>
+			<p>Este é apenas outro parágrafo de teste</p>
+		</div>
+		<p class="slidedown">Mostrar / Ocultar</p>
+</body></html>

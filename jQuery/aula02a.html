@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="iso-8859-1">
+<title></title>
+<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			var jq=jQuery.noConflict();
+			jq(document).ready(function(){
+			//aqui vai suas funções do jquery
+				jq("button").click(function(){
+					jq("p").hide();
+				})			
+			})
+
+		/*
+			$(seletor).acao()
+			$("p") seleciona todos os elemento com a tag "p"
+			$("p.teste") seleciona todos os "p" com a class teste
+			$("p#teste") seleciona todos os "p" com o ID teste
+			$("[href]") seleciona todos os elementos com o atributo href
+			$("[href=#]") todos os href com o valor igual a #
+			$("[href!='#']") todos os href com o valor diferente de #
+			$("[href$='.jpg']") todos os href com o valor terminado em .jpg
+			
+			$(seletor).ready(Function)
+			$(seletor).click(Function)
+			$(seletor).dblclick(Function)
+			$(seletor).focus(Function)
+			$(seletor).mouseover(Function)
+			$(seletor).keypress(Function)
+			$(seletor).submit(Function)
+			$(seletor).resize(Function)
+		*/
+		</script>
+	</head>
+	<body>
+		<h2>Isto é um tí­tutlo</h2>
+		<p>Isto é um parágrafo</p>
+		<p>Isto é outro parágrafo</p>
+		<button>Clique aqui</button>
+</body></html>

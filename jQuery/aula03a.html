@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="iso-8859-1">
+<title></title>
+<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#hide").click(function(){
+					$("p").hide(1000);					
+				});
+				$("#show").click(function(){
+					$("p").show(1000);
+				});
+				$("#toggle").click(function(){
+					$("p").toggle(1000);
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<h2>Aula 3 - Efeito</h2>
+		<p>Isto é um parágrafo</p>
+		<button id="hide">Ocultar</button>
+		<button id="show">Mostrar</button>
+		<button id="toggle">Alternar</button>
+</body></html>
